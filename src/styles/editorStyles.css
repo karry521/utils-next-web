@@ -1,0 +1,5 @@
+.editor-container .ck-editor__editable_inline {
+    min-height: 400px;  /* 设置富文本的初始高度 */
+    max-height: 1000px;  /* 可选：设置富文本的最大高度 */
+    overflow-y: auto;   /* 如果内容超过高度，允许滚动 */
+}
