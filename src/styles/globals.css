@@ -16,7 +16,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,4 +24,56 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-weight: bold; */
+  /* 默认加粗 */
+}
+
+h1 {
+  font-size: 2.25rem;
+  /* Tailwind: text-4xl */
+}
+
+h2 {
+  font-size: 1.875rem;
+  /* Tailwind: text-3xl */
+}
+
+h3 {
+  font-size: 1.5rem;
+  /* Tailwind: text-2xl */
+}
+
+h4 {
+  font-size: 1.25rem;
+  /* Tailwind: text-xl */
+}
+
+h5 {
+  font-size: 1.125rem;
+  /* Tailwind: text-lg */
+}
+
+h6 {
+  font-size: 1rem;
+  /* Tailwind: text-base */
+}
+
+.raw-html-embed {
+  width: 100%;
+  display: flex;
+}
+
+.raw-html-embed .image_resized {
+  clear: both;
+  text-align: center;
+  margin: 0.9em auto;
+  min-width: 50px;
 }

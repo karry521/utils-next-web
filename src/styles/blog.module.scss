@@ -1,0 +1,258 @@
+.ckContent {
+  div,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    font: revert;
+    margin: revert;
+    font-family: revert;
+  }
+  * {
+    font-family: 'Roboto' !important;
+  }
+  h1 {
+    font-size: 2em;
+    line-height: 2em;
+    padding-top: 1em;
+    margin-bottom: 0.6em;
+    font-weight: 400;
+    border-bottom: 1px solid #e9e9e9;
+  }
+
+  ul li {
+    list-style: initial;
+    line-height: 30px;
+  }
+
+  ul.todo-list {
+    list-style: none !important;
+  }
+
+  h2 {
+    font-size: 1.68em;
+    line-height: 2.18em;
+    padding-top: 0.8em;
+    margin-bottom: 0.4em;
+    font-weight: 400;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  h3 {
+    font-size: 1.36em;
+    line-height: 2em;
+    padding-top: 0.8em;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.15em;
+    line-height: 1.9em;
+    padding-top: 0.7em;
+    margin-bottom: 0.1em;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1em;
+    line-height: 2.1em;
+    padding-top: 0.2em;
+    margin-bottom: 0.8em;
+  }
+  figcaption {
+    background-color: var(--ck-color-image-caption-background);
+    caption-side: bottom;
+    color: var(--ck-color-image-caption-text);
+    display: table-caption;
+    font-size: 0.75em;
+    outline-offset: -1px;
+    padding: 0.6em;
+    word-break: break-word;
+  }
+  blockquote {
+  }
+  .table {
+    margin: 0;
+  }
+
+  ul,
+  ol {
+    list-style: initial;
+    margin-left: 32px;
+  }
+
+  ol li {
+    list-style: decimal;
+  }
+
+  ul.todo-list {
+    list-style: none !important;
+  }
+
+  sub {
+    vertical-align: sub;
+  }
+  sup {
+    vertical-align: super;
+  }
+  a {
+    display: initial;
+    color: blue;
+    text-decoration: underline;
+  }
+
+  /* .image_resized{
+    width: 30% !important;
+  } */
+
+  /* 表格 */
+  figure {
+    overflow-x: auto !important;
+    margin: auto;
+  }
+
+  figure > img {
+    margin: auto;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px !important;
+  }
+  th,
+  td {
+    border: 1px solid rgb(222, 224, 227);
+    text-align: center;
+    padding: 10px;
+  }
+  td {
+    background-color: #fff !important;
+  }
+  td:first-child {
+    position: sticky;
+    left: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d3d3d3;
+    border-color: #d3d3d3;
+    // z-index: 30;
+    background-color: #FAFAFA !important;
+    font-size: 14px !important;
+  }
+  tbody > tr:first-child {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+
+  .table td,
+  .table th {
+    border-top: 1px solid #dee2e6;
+    padding: 0.75rem;
+    vertical-align: inherit;
+  }
+
+  @media (max-width: 700px) {
+    /* 缺点框样式 */
+    div > ul {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+    div > div > div {
+      grid-template-columns: repeat(2, 1fr) !important;
+      /* padding-top: 10px !important;
+      padding-bottom: 10px !important; */
+    }
+
+    /* 表格 */
+    table {
+      width: 100%;
+      margin: 0;
+      overflow-x: auto !important;
+    }
+
+    figure {
+      display: inline-block !important;
+      overflow: auto !important;
+      margin: 0;
+      width: 100%;
+    }
+
+    .image_resized {
+      display: flex !important;
+      overflow: auto !important;
+      width: 90% !important;
+    }
+  }
+}
