@@ -120,7 +120,7 @@ const TitleAndImage = () => {
                 <div className="flex justify-between items-center px-[88px] mt-8">
                     <div>
                         图标url：
-                        <input type="text" id="titleIcon" className='w-[288px] [border:1px_skyblue_solid] rounded-[8px] pl-2 mr-2' placeholder="在这里粘贴图标的url" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
+                        <input type="text" id="titleIcon" className='w-[458px] [border:1px_skyblue_solid] rounded-[8px] pl-2 mr-2' placeholder="在这里粘贴图标的url" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
                     </div>
 
                     <div className="flex gap-6">
