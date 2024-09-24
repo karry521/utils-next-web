@@ -39,6 +39,7 @@ const TitleAndImage = () => {
         img.alt = 'img'
         img.style.width = iconWidth + 'px'
         img.style.height = iconHeight + 'px'
+        img.style.setProperty('margin', '0', 'important')
 
         titleElement.appendChild(img)
 
