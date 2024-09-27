@@ -7,7 +7,7 @@ const CustomEditor = dynamic(() => import('@/components/custom-editor'), { ssr: 
 const Ck5 = () => {
 
     const editorRef = useRef(null)
-    const [width1, setWidth1] = useState(70)
+    const [width1, setWidth1] = useState(98)
     const [width2, setWidth2] = useState(98)
 
     const [unit1, setUnit1] = useState('%')
@@ -26,33 +26,39 @@ const Ck5 = () => {
         const figure = doc.querySelectorAll('figure')[0]
 
         if (figure) {
+            const pcWidth = document.getElementById('pcWidth').getAttribute('value')
+            const phoneWidth = document.getElementById('phoneWidth').getAttribute('value')
 
             if (!isChecked) {
-                const className = 'table' + new Date().getTime()
+                const classUUID = 'table' + new Date().getTime()
 
-                figure.innerHTML += `<style>
-        @media (max-width:768px){
-          .${className}{
-            width:${document.getElementById('phoneWidth').getAttribute('value') + unit2} !important;
-          }
-        }
-        </style>`
+                if (pcWidth !== phoneWidth) {
+                    figure.innerHTML += `<style>
+            @media (max-width:768px){
+              .${classUUID}{
+                width:${document.getElementById('phoneWidth').getAttribute('value') + unit2} !important;
+              }
+            }
+            </style>`
+                }
 
-                figure.setAttribute('class', className)
+                figure.classList.add(classUUID)
 
                 figure.style.width = document.getElementById('pcWidth').getAttribute('value') + unit1
 
                 copyToClipboard(figure.outerHTML)
             } else {
+                figure.removeAttribute('style')
                 copyToClipboard(figure.outerHTML + `<style>
         .table{
           width:${document.getElementById('pcWidth').getAttribute('value') + unit1} !important;
         }
-        @media (max-width:768px){
+        ${pcWidth !== phoneWidth &&
+                    `@media (max-width:768px){
           .table{
             width:${document.getElementById('phoneWidth').getAttribute('value') + unit2} !important;
           }
-        }
+        }`}
         </style>`)
             }
 
