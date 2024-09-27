@@ -128,19 +128,19 @@ const TitleAndImage = () => {
                         <div className="flex justify-center items-center">
                             图标宽度：
                             <input type='number' id='iconWidth' className='w-[66px] [border:1px_skyblue_solid] rounded-[8px] pl-2 mr-2'
-                                value={iconWidth} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value > 0) setIconWidth(e.target.value) }} />px
+                                value={iconWidth} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value >= 0) setIconWidth(e.target.value) }} />px
                         </div>
 
                         <div className="flex justify-center items-center">
                             图标高度：
                             <input type='number' id='iconHeight' className='w-[66px] [border:1px_skyblue_solid] rounded-[8px] pl-2 mr-2'
-                                value={iconHeight} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value > 0) setIconHeight(e.target.value) }} />px
+                                value={iconHeight} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value >= 0) setIconHeight(e.target.value) }} />px
                         </div>
 
                         <div className="flex justify-center items-center ml-8">
                             标题与图标的间距：
                             <input type='number' id='iconHeight' className='w-[52px] [border:1px_skyblue_solid] rounded-[8px] pl-2 mr-2'
-                                value={iconGap} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value > 0) setIconGap(e.target.value) }} />px
+                                value={iconGap} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value >= 0) setIconGap(e.target.value) }} />px
                         </div>
                     </div>
                 </div>

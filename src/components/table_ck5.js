@@ -118,7 +118,7 @@ const Ck5 = () => {
                     </div>
                     <div className='flex justify-center items-center'>
                         PC端宽度：<input type='number' id='pcWidth' className='w-[99px] [border:1px_skyblue_solid] rounded-[8px] pl-4 mr-2'
-                            value={width1} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value > 0) setWidth1(e.target.value) }} />
+                            value={width1} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value >= 0) setWidth1(e.target.value) }} />
                         <div
                             className='w-[36px] flex justify-between relative cursor-pointer select-none'
                             onMouseOver={() => setFlag1(true)}
@@ -134,7 +134,7 @@ const Ck5 = () => {
                     </div>
                     <div className='flex justify-center items-center select-none'>
                         移动端宽度：<input type='number' id='phoneWidth' className='w-[99px] [border:1px_skyblue_solid] rounded-[8px] pl-4 mr-2'
-                            value={width2} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value > 0) setWidth2(e.target.value) }} />
+                            value={width2} onChange={(e) => { if (e.target.value.length <= 3 && e.target.value >= 0) setWidth2(e.target.value) }} />
                         <div
                             className='w-[36px] flex justify-between relative cursor-pointer'
                             onMouseOver={() => setFlag2(true)}
