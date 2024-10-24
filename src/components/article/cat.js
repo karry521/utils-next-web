@@ -28,7 +28,7 @@ function Cat({ cat }) {
 
                             <Link
                                 href={cat.href}
-                                className='w-auto px-4 text-nowrap text-white bg-[#4fe3c1] h-[40px] rounded-[10px] flex items-center font-[600] text-[14px] Sixmd:justify-center Mlg:mt-2'
+                                className='w-auto px-6 text-nowrap text-white bg-[#4fe3c1] h-[40px] rounded-[10px] flex items-center font-[600] text-[14px] Sixmd:justify-center Mlg:mt-2'
                             >
                                 {cat.button}
                             </Link>

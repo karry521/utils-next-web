@@ -18,6 +18,7 @@ body {
   color: var(--foreground);
   background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
 }
 
 @layer utilities {
@@ -42,17 +43,20 @@ h1 {
 }
 
 h2 {
-  font-size: 1.875rem;
+  font-size: 27px;
+  /* font-size: 1.875rem; */
   /* Tailwind: text-3xl */
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 22px;
+  /* font-size: 1.5rem; */
   /* Tailwind: text-2xl */
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 18px;
+  /* font-size: 1.25rem; */
   /* Tailwind: text-xl */
 }
 
@@ -76,4 +80,9 @@ h6 {
   text-align: center;
   margin: 0.9em auto;
   min-width: 50px;
+}
+
+/* 设置Modal组件遮罩层样式 */
+.ant-modal-mask {
+  background-color: transparent !important;
 }
