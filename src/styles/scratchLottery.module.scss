@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px #eee;
+    overflow: hidden;
+}
+
+
+.gj {
+    margin: 16px auto;
+    width: 200px;
+    height: 100px;
+    position: relative; // 增加相对定位，方便内部元素绝对定位
+}
+
+.jp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: black;
+}
+
+.mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

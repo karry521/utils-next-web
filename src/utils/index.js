@@ -4,6 +4,12 @@ export const copyCode = (elementName) => {
     copyToClipboard(code)
 }
 
+// 复制json
+export const copyCode2 = (elementName) => {
+    const code = document.getElementById(elementName).innerHTML
+    copyToClipboard(code.replaceAll('<br>','\n'))
+}
+
 // 拷贝到剪贴板
 export const copyToClipboard = async (text) => {
     if (navigator.clipboard && navigator.clipboard.writeText) {

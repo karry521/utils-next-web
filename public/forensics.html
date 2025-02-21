@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="useState" data-nowPage=0
+            style="width: 200px;height: 42px;display: grid;grid-template-columns: repeat(2,1fr);background: #80808033;border: 1px gray solid;border-radius: 8px;user-select: none;position: relative;">
+            <p id="tab1"
+                style="height: 42px;font-size:18px;color:blue;margin: 0;display: flex; justify-content: center;align-items: center;cursor: pointer;position: relative;z-index: 54;"
+                onclick="
+                var useState = document.getElementById('useState')
+                useState.setAttribute('data-nowPage',0) // 修改选中状态
+
+                var tab1 = document.getElementById('tab1')
+                var tab2 = document.getElementById('tab2')
+                var bgDiv = document.getElementById('bgDiv')
+                tab1.style.fontSize = '18px' // 设置tab1字体大小
+                tab1.style.color ='blue' // 设置tab1字体颜色
+                tab2.style.fontSize = '16px' // 重置tab2字体大小
+                tab2.style.color ='black' //  重置tab2字体颜色
+
+                bgDiv.style.left = '2px' // 更改背景位置
+                bgDiv.style.borderRadius = '6px 0px 0px 6px' // 更改背景圆角
+                ">Tab1</p>
+            <p id="tab2"
+                style="height: 42px;font-size:16px;margin: 0;display: flex; justify-content: center;align-items: center;cursor: pointer;;position: relative;z-index: 54;"
+                onclick="
+                var useState = document.getElementById('useState')
+                useState.setAttribute('data-nowPage',1) // 修改选中状态
+
+                var tab1 = document.getElementById('tab1')
+                var tab2 = document.getElementById('tab2')
+                var bgDiv = document.getElementById('bgDiv')
+                tab2.style.fontSize = '18px' // 设置tab2字体大小
+                tab2.style.color ='blue' // 设置tab2字体颜色
+                tab1.style.fontSize = '16px' // 重置tab1字体大小
+                tab1.style.color ='black' //  重置tab1字体颜色
+                bgDiv.style.left = '100px' // 更改背景位置
+                bgDiv.style.borderRadius = '0px 6px 6px 0px' // 更改背景圆角
+                ">
+                Tab2</p>
+
+            <!-- 背景颜色 -->
+            <div id="bgDiv"
+                style="width: 98px;height: 38px;background: white;border-radius: 6px 0px 0px 6px;transition: left .2s linear;position: absolute;top: 2px;left: 2px; z-index: 52;">
+            </div>
+        </div>
+</body>
+
+</html>
