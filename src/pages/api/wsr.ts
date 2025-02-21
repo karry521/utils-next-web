@@ -7,4 +7,4 @@ const handler = (req: NextApiRequest, res: NextApiResponse) => {
 
 }
 
-export default handler3
+export default handler
